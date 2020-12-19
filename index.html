@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>工业企业网站</title>
+	<style>
+	*{
+		padding: 0;
+		margin: 0 auto;
+	}
+	body{
+		margin: 0 auto;
+		background-color:#F4F4F4FF;
+	}
+	a{
+			text-decoration: none;
+	}
+	li{
+			list-style: none;
+	}
+	.logo{
+		padding-right: 60px;
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+	.fl{
+		float: left;
+	}
+	#top{
+		width: 1200px;
+		height: 80px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.nav{
+		margin-top: 42px;
+	}
+	.nav li{
+		float: left;
+		border-right: 1px solid rgba(128,128,128, 1);
+	}
+	.nav a{
+		padding-bottom: 12px;
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(74,74,74,1);
+		padding:0 7px;
+	}
+	.clear form * {
+		float: left;
+		position: relative;
+		bottom: 45px;
+	}
+	.form .search{
+		width: 360px;
+		height: 20px;
+		border: 1px solid rgba(0, 163, 255, 1.0);
+		padding: 9px;
+		position: relative;
+		right: 200px;
+	}
+	#last {
+	border: none;
+	padding-right: 9px;
+	}
+	.form .submit {
+    width: 50px;
+    height: 40px;
+    border: 1px solid rgba(0,163,255, 1);
+    border-left: none;
+    background: rgba(0,163,255, 1) url(切图/a.png) no-repeat center center;
+    position: relative;
+    right: 200px;
+	}
+
+	.clear:after {
+    content: '';
+    display:block;
+    height: 0;
+    clear: both;
+	}
+	.head{
+	background-color:#558EB0FF;
+	height:45px;
+	text-align: center;
+	}
+	.head ul{
+	position: relative;
+	left:160px;
+	}
+	.head li{
+	float: left;
+	
+	}
+	.head li a{
+		float: right;
+		height:19px;
+		font-size:18px;
+		text-align: center;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(255,255,255,1);
+		padding-right: 90px;
+		line-height: 40px;
+	}
+	#photo{
+	background-color: #010005FF;
+	height:326px;
+	text-align: center;
+	border:0px 20px 20px 20px;
+	border-color:  #AFAFAFFF;
+	}
+	.main{
+	height:470px;
+	float: left;
+	padding: 0 220px;
+	}
+	.box{
+		float: left;
+		padding-top: 20px;
+		margin: 0 10px;
+	}
+	#left{
+		width: 335px;
+	}
+	#center{
+		width:333px;
+	}
+	#right{
+		width: 299px;
+	}
+	.look img{
+		width:333px;
+		height:107.1px;
+		padding-bottom: 14px
+	}
+	span{
+		width:96px;
+		height:60px;
+		font-size:24px;
+		line-height: 60px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(0,101,167,1);
+		float: left;
+	}
+	#left p{
+		width:335px;
+		height:149px;
+		background:rgba(235, 235, 235, 1.5);
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.look li{
+		position: relative;
+	}
+	.look p{
+		width:102px;
+		height:21px;
+		font-size:20px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(255,255,255,1);
+		text-shadow:0px 2px 2px rgba(0, 0, 0, 0.21);
+		position: absolute;
+		right: 20px;
+		bottom: 71px;
+	}
+	.more{
+		width:96px;
+		height:60px;
+		line-height: 60px;
+		font-size:18px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(64,64,64,1);
+		float: right;
+	}
+	.text{
+		float: left;
+	}
+	.text li a{
+		font-size:18px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(96,96,96,1);
+		line-height:40px;
+	}
+
+	.input{
+		text-align: center;
+		padding-left: 130px;
+		padding-top: 85px;
+		height: 20px;
+		width: 1200px;
+
+	}
+	.input span{
+		line-height: 20px;
+		font-size:18px;
+		font-family:Microsoft YaHei;
+		color:rgba(0,101,167,1);
+		padding-right: 5px;
+	}
+	.input form{
+		line-height: 20px;
+		float: left;
+		padding:10px 20px 0 10px;
+		background-color: rgba(255,255,255,0.7);
+	}
+	.bottom{
+		background-color: #1467A2FF;
+		height: 103px;
+		color: #fff;
+		text-align: center;
+		float: left;
+		width: 1525px;
+		line-height: 50px;
+	}
+
+
+	.header{
+		position: relative;
+	}
+	#outer{
+		width: 802px;
+		height: 545px;
+		background-color: rgba(240,255,255,0.5) ;
+		margin: 10px auto;
+		position: relative;
+		overflow: hidden;
+	}
+	#imgList{
+		list-style: none;
+		position: absolute;
+	}		
+	#imgList li{
+		float: left;
+	}	
+	#snav{
+		position: absolute;
+		bottom: 20px;
+		left: 380px;	
+	}
+	#snav a{
+		float: left;
+		width: 15px;
+		height: 15px;
+		background-color: darkgrey;
+		margin: 0 5px ;
+		opacity: 0.5;
+	}
+	#imgList img{
+		width: 802px;
+		height: 545px;
+	}
+
+
+	.point{
+		width: 1525px;
+		height: 244px;
+		background-image: url(js/5.png);
+		background-repeat: repeat-x;
+	}
+
+
+	#div1 {
+            height: 278px;
+            width: 168px;
+            position: absolute;
+            right: 0px;
+            object-fit: cover;
+
+        }
+	</style>
+</head>
+<body>
+	<div style="overflow: hidden">
+		<div id="top" class="clear">
+			<img class="logo" src="切图/logo.png" alt="logo" width="170px" height="39px">
+			<ul class="nav clear">
+				<li><a href="#">技术参数</a></li>
+				<li><a href="#">对换表</a></li>
+				<li id="last"><a href="#" >抗化学腐蚀性表</a></li>
+			</ul>
+			<form class="form clear fr">
+				<input type="text" placeholder="输入关键字" class="search">
+				<input type="button" class="submit">
+			</form>
+		</div>
+		<div class="head">
+			<ul>
+				<li><a href="#">&nbsp首页&nbsp</a></li>
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">产品中心</a></li>
+				<li><a href="#">服务人群</a></li>
+				<li><a href="#">行业应用</a></li>
+				<li><a href="#">资源下载</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+		<div id="photo">
+			<img src="切图/图层 20.png">
+		</div>
+		<div class="main">
+			<div class="box" id="left">
+				<span>关于</span>
+				<img src="切图/图层 12.png" width="337px" height="205px">
+				<p>
+				杜拉巴尔是一家具有超过100年历史的专业生产全系列静密封产品的公司。 集团公司在美国，加拿大，中国有五家独资工厂。 DURLON静密封产品广泛应用于炼油，石油化工，化工，电力（火电及核电），造纸，食品药品等行业。     
+				</p>
+			</div>
+			<div class="box" id="center">
+				<span>行业应用</span>
+				<ul class="look">
+					<li><a href="#"><p>&nbsp&nbsp&nbsp化工<br>Chemical</p><img src="切图/图层 22.png" class="min"></a></li>
+					<li><a href="#"><p>石油天然气<br>Oil&nbsp&&nbspgas</p><img src="切图/图层 21.png" class="min"></a></li>
+					<li><a href="#"><p>&nbsp&nbsp&nbsp电力<br>Electric</p><img src="切图/图层 23.png" class="min"></a></li>
+				</ul>
+			</div>
+			<div class="box" id="right">
+				<span>资源下载</span>
+				<a href="#" class="more">more</a>
+				<ul class="text">
+				<li><a href="#">公司地址及联系方式</a></li>
+				<li><a href="#">公司企业年检报告</a></li>
+				<li><a href="#">产品技术参数</a></li>
+				<li><a href="#">产品安全手册</a></li>
+				<li><a href="#">公司产品手册电子版</a></li>
+				<li><a href="#">公司产品手册</a></li>
+				<li><a href="#">公司产品手册</a></li>
+				<li><a href="#">公司产品手册</a></li>
+				<li><a href="#">公司产品手册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+    		<div class="sbox" id="sbox">
+				<div id="outer">
+				<ul id="imgList">
+					<li><img src="js/1.jpg" alt="" class="simg"></li>
+					<li><img src="js/3.jpg" alt="" class="simg"></li>
+					<li><img src="js/4.jpg" alt="" class="simg"></li>
+					<li><img src="js/1.jpg" alt="" class="simg"></li>
+				</ul>
+				<div id="snav">
+					<a href="javascript:;" class="sa"></a>
+					<a href="javascript:;" class="sa"></a>
+					<a href="javascript:;" class="sa"></a>
+				</div>
+			</div>
+		</div>
+
+
+	<div class="point" id="point" onmouseover="into()" onmouseout="leave()">
+		<div class="input" id="input" style="display: none">
+			<form  action="#">
+				<br>
+				<span>员工登录</span>
+				工号：
+				<input type="text">
+				密码:
+				<input type="password">
+				<input type="submit">
+			</form>
+			<form action="#">
+				<br>
+				<span>经销商登录</span>
+				编号：
+				<input type="text">
+				密码:
+				<input type="password">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+
+		<div class="bottom">
+			杜拉巴尔流体装置（上虞）有限公司<br>Copyright © By 2009 all right reserved.&nbsp浙ICP备05087296号 
+		</div>
+	</div>
+		<div id="div1">
+			<img src="js/7.jpg" alt="">
+		</div>
+	
+	
+		<script>
+			window.onload=function(){
+				start();
+				ri();
+			}
+			window.onresize=window.onscroll=function(){
+				ri();
+			}
+
+			//轮播图
+			var timer;
+			var index =0;
+			function getStyle(obj,name){
+				if(window.getComputedStyle){
+					return getComputedStyle(obj,null)[name];
+				}else{
+					return obj.currentStyle[name];
+				}
+			}
+			function move(obj,attr,target,speed,callback){
+				clearInterval(obj.timer);
+				var current = parseInt(getStyle(obj,attr));
+				if(current>target){
+					speed=-speed;
+			}
+			obj.timer=setInterval(function(){
+				var oldValue = parseInt(getStyle(obj,attr));
+				var newValue = oldValue + speed;
+				if(speed<0&&newValue<target||speed>0&&newValue>target){
+					newValue =target;
+			}
+			obj.style[attr]=newValue+"px";
+				if(newValue==target){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			},30);
+			}
+			function start(){
+				imgList =document.getElementById("imgList");
+				imgArr = document.getElementsByClassName("simg");				
+				nav = document.getElementById("snav");
+				outer = document.getElementById("outer");
+			
+				allA =document.getElementsByClassName("sa");
+				imgList.style.width=(parseInt(getStyle(imgArr[0],"width"))+10)*imgArr.length+"px";
+
+				snav.style.left=(outer.offsetWidth-snav.offsetWidth)/2;
+				allA[index].style.backgroundColor="black";
+				for(var i=0;i<allA.length;i++){
+					allA[i].num=i;
+					allA[i].onclick=function(){
+						clearInterval(timer);
+						index=this.num;
+						setA();
+						move(imgList,"left",-802*index,20,function(){
+							autoChange();
+						});
+					};
+				}
+				autoChange();
+			}
+			function setA(){
+				if(index>=imgArr.length-1){
+					index=0;
+					imgList.style.left=0;
+				}
+				for(var i=0;i<allA.length;i++){
+					allA[i].style.backgroundColor="";
+					allA[index].style.backgroundColor="black";
+				}
+			}
+			function autoChange () {
+				timer = setInterval(function(){
+					index++;
+					index=index%imgArr.length;
+					move(imgList,"left",-802*index,20,function(){
+						setA();
+					});
+				},3000);
+			}
+
+
+			//登陆焦点
+			function into(){
+				document.getElementById("input").style.display = "";
+			}
+			function leave(){
+				document.getElementById("input").style.display = "none";
+			}
+
+
+			//右侧广告/祝福
+			function ri() {
+            var oDiv=document.getElementById("div1");
+            var scrollTop =document.documentElement.scrollTop;
+            var t = (document.documentElement.clientHeight-oDiv.offsetHeight)/2;
+            oDiv.style.top=scrollTop+t-36+"px";
+        }
+		</script>
+		
+
+</body>
+</html>
